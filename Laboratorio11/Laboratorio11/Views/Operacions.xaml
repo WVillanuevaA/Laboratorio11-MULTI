@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Laboratorio11.ViewModels" 
+             x:DataType="viewmodels:ViewModelOperaciones"
+             x:Class="Laboratorio11.Views.Operacions">
+    <ContentPage.Content>
+        <StackLayout>
+           <Entry Placeholder="ValorA" Text="{Binding ValorA}"></Entry>
+           <Entry Placeholder="ValorB" Text="{Binding ValorB}"></Entry>
+           <Entry Placeholder="ValorC" Text="{Binding ValorC}"></Entry>
+           <Button Text="Sumar" Command="{Binding Sumar}"/>
+           <Label FontSize="Large"
+                Text="{Binding ResultadoSuma}"></Label>
+        
+           <Entry Placeholder="ValorA" Text="{Binding ValorA}"></Entry>
+           <Entry Placeholder="ValorB" Text="{Binding ValorB}"></Entry>
+           <Entry Placeholder="ValorC" Text="{Binding ValorC}"></Entry>
+           <Button Text="Multiplicar" Command="{Binding Multiplicar}"/>
+           <Label FontSize="Large"
+                Text="{Binding ResultadoMultiplica}"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
